@@ -1,0 +1,28 @@
+<div class="container-fluid">
+    <div class="justify-content-center">
+      <div class="container py-2 border rounded-5">
+        <div class="py-2"></div>
+            <img class="container rounded-5" [src]="pacexImg" alt="pace-x image">
+            <div class="py-2"></div>
+      </div>
+      <div class="py-2"></div>
+      <div class="py-5 text-center rounded-5 container bg-body-tertiary border ">
+       
+        <div class="justify-content-center">
+        <img [class]="toggleFormat" class="d-block mx-auto mb-4" [src]="currentImg" alt="stemfields.io" width="102" height="87">
+
+        <h1 class="display-5 fw-bold text-body-emphasis">All You Need Is An Ember</h1>
+        <div class="mx-auto">
+          <p class="lead mb-4">Transform challanges into solutions. Dedicate to crafting efficient, scalable applications,
+            that make a real difference. Let's build today.</p>
+        </div>
+      </div>
+          <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
+            <button class="btn btn-danger rounded-4 btn-lg px-4.2 gap-3" (click)="toggleImage()">
+              <h1 class="display-5 fw-bold">{{buttonText}}
+              </h1>
+            </button>
+          </div>   
+      </div>
+    </div>
+  </div>
